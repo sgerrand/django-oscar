@@ -2,7 +2,7 @@ FROM python:3.11
 ENV PYTHONUNBUFFERED 1
 
 RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
-RUN apt-get install -y nodejs npm
+RUN apt-get install -y nodejs
 
 COPY ./requirements.txt /requirements.txt
 RUN pip3 install -r /requirements.txt
